@@ -5,7 +5,7 @@ import CounterHook from './CounterHook';
 export const ThemeContext = React.createContext(); // provider & consumer
 
 function App() {
-  const [theme, setTheme] = useState('red');
+  const [theme, setTheme] = useState('green');
   return (
     <ThemeContext.Provider value={{ backgroundColor: theme}}>
       {console.log('App is rendered')}
