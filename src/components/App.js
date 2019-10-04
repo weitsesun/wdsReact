@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import RecipeList from './RecipeList'
 import '../css/App.css'
 import uuidv4 from 'uuid/v4'
+import RecipeEdit from './RecipeEdit';
 
 export const RecipeContext = React.createContext();
 const LOCAL_STORAGE_EKY = 'cookingWithReact.recipes'
@@ -44,6 +45,7 @@ function App() {
   return (
     <RecipeContext.Provider value={recipeContextValue}>
       <RecipeList recipes={recipes} />
+      <RecipeEdit/>
     </RecipeContext.Provider>
   )
 
