@@ -21,7 +21,7 @@ export default function RecipeList({ recipes }) {
           onClick={handleRecipeAdd}
           >
             Add Recipe
-            </button>
+          </button>
       </div>
     </div>
   )
