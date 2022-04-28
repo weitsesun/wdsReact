@@ -61,8 +61,9 @@ function App() {
 
   return (
     <RecipeContext.Provider value={recipeContextValue}>
-      <RecipeList recipes={recipes} />
-      {selectedRecipe && <RecipeEdit recipe={selectedRecipe} />}
+      <h1>孫海海你好</h1>
+      {/* <RecipeList recipes={recipes} />
+      {selectedRecipe && <RecipeEdit recipe={selectedRecipe} />} */}
     </RecipeContext.Provider>
   )
 
